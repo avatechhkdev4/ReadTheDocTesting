@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Read The Doc Testing'
+copyright = '2022, avatech'
+author = 'avatechhkdev4'
 
 release = '0.1'
 version = '0.1.0'
@@ -33,3 +33,10 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+
+from recommonmark.parser import CommonMarkParser
+
+source_parsers = {'.md': CommonMarkParser}
+
+source_suffix = ['.rst', '.md']
